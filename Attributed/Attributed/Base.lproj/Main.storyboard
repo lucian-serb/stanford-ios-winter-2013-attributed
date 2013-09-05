@@ -114,6 +114,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeFont:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N8Q-dG-ZsC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BAe-k6-QPe">
                                 <rect key="frame" x="124" y="310" width="73" height="44"/>
@@ -127,6 +130,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeFont:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fMM-b0-MUx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZKS-rT-SYK">
                                 <rect key="frame" x="205" y="310" width="73" height="44"/>
@@ -140,6 +146,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeFont:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ykb-xq-Gd4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I3M-3F-IiA">
                                 <rect key="frame" x="20" y="366" width="133" height="44"/>
@@ -218,6 +227,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AttributedViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeColor:" candidateClass="UIButton"/>
+                <relationship kind="action" name="changeFont:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectedWordLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectedWordStepper" candidateClass="UIStepper"/>

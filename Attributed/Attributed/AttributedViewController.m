@@ -70,6 +70,21 @@
     [self addSelectedWordAttributes:@{NSForegroundColorAttributeName: sender.backgroundColor}]; 
 }
 
+- (IBAction)changeFont:(UIButton *)sender
+{
+    CGFloat fontSize = [UIFont systemFontSize];
+    
+    NSDictionary *attributes = [self.label.attributedText attributesAtIndex:0 effectiveRange:NULL];
+    UIFont *existingFont = attributes[NSFontAttributeName];
+    
+    if (existingFont) {
+        fontSize = existingFont.pointSize;
+    }
+    
+    UIFont *font = [sender.titleLabel.font fontWithSize:fontSize];
+    [self addSelectedWordAttributes:@{NSFontAttributeName: font}]; 
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
