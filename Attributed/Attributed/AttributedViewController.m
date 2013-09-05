@@ -45,6 +45,11 @@
     [self addSelectedWordAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}];
 }
 
+- (IBAction)unUnderline
+{
+    [self addSelectedWordAttributes:@{NSUnderlineStyleAttributeName  : @(NSUnderlineStyleNone)}];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

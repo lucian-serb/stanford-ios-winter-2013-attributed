@@ -157,6 +157,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="unUnderline" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6UF-ul-ZQ0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rCM-vc-tgE">
                                 <rect key="frame" x="166" y="366" width="134" height="44"/>
