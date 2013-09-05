@@ -85,6 +85,16 @@
     [self addSelectedWordAttributes:@{NSFontAttributeName: font}]; 
 }
 
+- (IBAction)outline
+{
+    [self addSelectedWordAttributes:@{NSStrokeWidthAttributeName: @3.0}];
+}
+
+- (IBAction)unOutline
+{
+    [self addSelectedWordAttributes:@{NSStrokeWidthAttributeName: @0.0}];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
