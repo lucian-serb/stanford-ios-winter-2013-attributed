@@ -40,6 +40,11 @@
     self.selectedWordLabel.text = [self selectedWord]; 
 }
 
+- (IBAction)underline
+{
+    [self addSelectedWordAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
