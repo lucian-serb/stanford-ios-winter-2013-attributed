@@ -40,6 +40,21 @@
     self.selectedWordLabel.text = [self selectedWord]; 
 }
 
+- (void)addLabelAttributes:(NSDictionary *)attributes forRange:(NSRange)range
+{
+    if (range.location != NSNotFound) {
+        NSMutableAttributedString *mat = [self.label.attributedText mutableCopy];
+        [mat addAttributes:attributes range:range];
+        self.label.attributedText = mat;
+    }
+}
+
+- (void)addSelectedWordAttributes:(NSDictionary *)attributes
+{
+    NSRange range = [[self.label.attributedText string] rangeOfString:[self selectedWord]];
+    [self addLabelAttributes:attributes forRange:range];
+}
+
 - (IBAction)underline
 {
     [self addSelectedWordAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}];
