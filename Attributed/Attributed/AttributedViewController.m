@@ -10,6 +10,10 @@
 
 @interface AttributedViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *selectedWordLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *selectedWordStepper;
+
 @end
 
 @implementation AttributedViewController
