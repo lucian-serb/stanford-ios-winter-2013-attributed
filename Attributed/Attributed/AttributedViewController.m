@@ -18,6 +18,17 @@
 
 @implementation AttributedViewController
 
+- (NSArray *)wordList
+{
+    NSArray *wordList = [[self.label.attributedText string] componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    if ([wordList count]) {
+        return wordList;
+    } else {
+        return @[@""];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
