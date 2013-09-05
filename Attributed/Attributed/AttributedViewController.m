@@ -65,6 +65,11 @@
     [self addSelectedWordAttributes:@{NSUnderlineStyleAttributeName  : @(NSUnderlineStyleNone)}];
 }
 
+- (IBAction)changeColor:(UIButton *)sender
+{
+    [self addSelectedWordAttributes:@{NSForegroundColorAttributeName: sender.backgroundColor}]; 
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
