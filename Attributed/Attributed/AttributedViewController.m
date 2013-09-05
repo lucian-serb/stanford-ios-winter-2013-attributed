@@ -26,7 +26,13 @@
         return wordList;
     } else {
         return @[@""];
-    }
+    } 
+}
+
+- (NSString *)selectedWord
+{
+    return [self wordList][(int)self.selectedWordStepper.value]; 
+}
 }
 
 - (void)viewDidLoad
