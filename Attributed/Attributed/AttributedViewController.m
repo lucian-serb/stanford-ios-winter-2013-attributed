@@ -33,6 +33,11 @@
 {
     return [self wordList][(int)self.selectedWordStepper.value]; 
 }
+
+- (IBAction)updateSelectedWord
+{
+    self.selectedWordStepper.maximumValue = [[self wordList] count] - 1;
+    self.selectedWordLabel.text = [self selectedWord]; 
 }
 
 - (void)viewDidLoad
